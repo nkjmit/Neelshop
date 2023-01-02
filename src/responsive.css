@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ /** nav bar coor*/
+.navbar{
+    background-color:#282A35;
+        
+}
+.navbar-nav a{
+    color: #ffff;
+    font-family:'Times New Roman', Times, serif;
+    font-style: content '\e82d';
+    margin-left:15px;
+      }
+      .navbar-nav a:hover{
+        background-color: black;
+        color: #ffff;
+      }
+       /** nav bar search bar */
+
+     
+ /* drowpdown on hover css property**********************************************************/
+ .dropbtn {
+          padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-menu {display: block;}
+  /*footer css ******************************************************/
+  
+  .footer {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+   
+    background-color: #282A35 ;/* #38383d;*/
+
+}
+.footer-anchor {
+  color: gray;
+  margin: 10px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.footer-anchor:hover {
+    text-decoration: none;
+    color: #FFC525;
+}
+
+.f-color {
+    color: white;
+    line-height: 30px;
+
+}
+
+.fhead-color {
+  
+    margin: 10px;
+    color: #ffff;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.list-style {
+    list-style-type: none;
+    line-height: 30px;
+
+}
+.copy-right {
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    font-style: bold;
+    
+
+}
+.copy-right a{
+    color: #ffff;
+    text-decoration: none;
+    font-family: cursive;
+}
+.copy-right :hover{
+    color: gold;
+    font-family: 'Times New Roman', Times, serif;
+     font-style: italic;
+
+
+}
+.fhead-color+p{
+  color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    margin-top: 8px;
+    font-style: content'\e835';
+
+}
+.social-icon p{
+  font-family: 'Times New Roman', Times, serif ;
+  color: gray;
+  font-size: large;
+  font-style:initial
+
+  
+}
+.social-icon a{
+  margin-right: 3px;
+  list-style: square;
+  vertical-align: super;
+}
+.social-icon a :hover{
+background-color: #FFC525;
+
+}
+.footer .fhead-color:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-top: 0.35rem;
+  background:#FFC525;
+   margin: 10px;
+}
+
+/* responsive footer css*/
+  
+  @media screen and (max-width:640px) {
+    .footer {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+ 

@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Neel Shop </title>
+    <link rel="stylesheet" href="../src/gallery.css">
+    <link rel="stylesheet" href="../src/responsive.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <img src="../public/image/logo1.png" height="50px" alt="image not supported "id="img-logo">
+        <button style="background-color: white;color: white;" class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a class="nav-link" href="Home.html">HOME</a></li>
+                <li class="nav-item "><a class="nav-link" href="">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="">OTHERS</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-sign-in"></span>SIGN-IN</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="login.html"><span class="fa fa-sign-in"></span> SIGN-IN </a>
+                        <a href="register.html"><span class="fa fa-user-plus"></span> Sign Up </a>
+                        <a href="password.html"><span class="fa fa-unlock-alt"></span> Change Password </a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="cart">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropbtn" data-toggle="dropdown" href="#"><i class="bi bi-person-circle"></i><span
+                                class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <div class="card p-2  m-2" style="width: 250px;" id="account-img">
+                                <img w-25 h-25 src="../public/image/img.png" height="150px" class="card-img-top"
+                                    alt="image not supported ">
+                                <div class="card-header text-center">
+
+                                    <dt>
+                                        <span class="card-title">Name :</span>
+                                        <span class="card-subtitle">ADMIN </span>
+                                    </dt>
+                                </div>
+                                <div class="card-body">
+                                    <dl>
+                                        <dt>
+                                            <span>Account:</span>
+                                            <span>ACTVE</span>
+                                        </dt>
+                                        <dt>
+                                            <span>DOB:</span>
+                                            <span>01-01-2023</span>
+                                        <dd>
+                                            <sapn>Email-admin1@gmail.com</sapn>
+                                            <span>Department-</span><span>It Sell</span>
+                                        <dd>
+                                        <dd></dd>
+
+                                    </dl>
+
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-dark w-100" type="submit"><span
+                                            class="bi bi-person"></span>LOGOUT</button>
+
+                                </div>
+
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group " id="search-bar">
+                    <input class="form-control mr-sm-2" type="search" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary "><span class="bi bi-search" type="submit"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <section>
+
+        <div class="carousel slide carousel-dark" id="banner" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../public/image/n1.jpg " class="w-100 d-block " height="400">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="text-center d-block w-100 ">
+                        <img src="../public/image/n2.jpg " class="w-100 d-block " height="400px;">
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="../public/image/n3.jpg " class="w-100 d-block " height="400px;">
+                </div>
+            </div>
+            <div>
+                <button data-bs-target="#banner" data-bs-slide="prev" class="carousel-control-prev btn btn-dark ">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#banner" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="1" data-bs-target="#banner"></button>
+                <button data-bs-slide-to="2" data-bs-target="#banner"></button>
+            </div>
+
+        </div>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </section>
+    <img src="../public/image/itemlist.png">
+
+    <div class="image-gallery">
+        
+        <h3><b>TOP LIKE PRODUCTS IN 2023</b> </h3>
+        <p>Purchage Item Hurry Up only limited Stocks </p>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel ">
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <span id="im">
+                        <div class="card p-2 m-2 d-block " style="width: 250px;">
+                            <img w-25 h-25 src="../public/image/p1.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+
+                        </div>
+                        <div class="card p-2 m-2  d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p2.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+
+                        </div>
+                        <div class="card p-2 m-2 d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p3.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+
+                        </div>
+                        <div class="card p-2 m-2 d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p4.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+
+                        </div>
+                        <div class="card p-2 m-2d-block  " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/toy.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </span>
+
+                </div>
+                <div class="carousel-item ">
+                    <span id="im">
+                        <div class="card p-2 m-2 d-block " style="width: 250px;">
+                            <img w-25 h-25 src="../public/image/p6.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2  d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p7.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2 d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p8.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2 d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p9.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2 d-block  " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p10.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                    </span>
+                </div>
+
+
+                <div class="carousel-item ">
+                    <span id="im">
+                        <div class="card p-2 m-2 d-block " style="width: 250px;">
+                            <img w-25 h-25 src="../public/image/p4.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2  d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/flower.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2 d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/mobile.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2 d-block " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/p4.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                        <div class="card p-2 m-2d-block  " style="width: 250px; ">
+                            <img w-25 h-25 src="../public/image/car.jpg " height="150px" class="card-img-top"
+                                alt="image not supported ">
+                            <div class="card-footer">
+                                <button class="btn btn-primary w-100"><span class="bi bi-cart"></span>cart</button>
+
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div>
+                <span class="fhead-color">DEVLOPER INFO</span>
+                <p> The Department of Defense Developers Page connects government and citizen developers with the tools
+                    they need to access DOD data. Software developers and researchers c</p>
+
+            </div>
+            <div>
+                <span class="fhead-color">Help</span>
+                <li class="list-style"><a class="footer-anchor" href="">Payments</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Shipping</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Cancellation Returns</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">FAQ</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Report Infringement</a></li>
+            </div>
+            <div>
+                <span class="fhead-color">POLICY</span>
+                <li class="list-style"><a class="footer-anchor" href=""> Return Policy</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Terms Of Use</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Sitemap</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Security</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">EPR Compliance</a></li>
+            </div>
+            <div>
+                <span class="fhead-color">SOCIAL MEDIA</span>
+                <li class="social-icon">
+                    <p>FALLOW OUR SOCIAL MEDIA LINK </p>
+                    <a href="https://www.facebook.com"><span class="fa fa-facebook-f fa-2x" style="color: #3b5998;"><span></a>
+                    <a href="https://twitter.com/"><span class="fa fa-twitter fa-2x" style="color: #55acee;"></span></a>
+                    <a href="https://google.com/"><span class="fa fa-google fa-2x" style="color: #dd4b39;"></span></a>
+                    <a href="https://linkdein.com/"><span class="fa fa-linkedin-in fa-2x" style="color: #0082ca;"></span></a>
+                    <a href="https://youtube.com/"><span class="fa fa-youtube fa-2x" style="color: #c61118;"></span></a>
+                    <a href=""><span class="fa fa-linkedin-in fa-2x" style="color: #0082ca;"></span></a>
+                    <a href="https://github.com/"><span class="fa fa-github fa-2x" style="color: #ffff;"></span></a>
+                    <a href="https://instagram.com/"><span class="fa fa-instagram fa-2x" style="color: #ac2bac;"></span></a>
+
+                </li>
+            </div>
+        </div>
+        <div class="copy-right"><a href="">&copy NeelShop All Copright reserved</a></div>
+    </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

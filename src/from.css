@@ -1,0 +1,34 @@
+.form-control+ span{
+
+color: red;
+
+}
+
+#Uname:valid~div{
+    display: none;
+     color: green;
+}
+#Uname:invalid~div{
+    color: red;
+    display: block;
+}
+
+#password:valid~div{
+    display: none;
+}
+
+#password:invalid~div{
+    color: red;
+    display:block;
+}
+tbody tr:nth-child(even){
+    background: green;
+    color: #ffff;
+}
+tbody tr:nth-child(odd){
+    background: rgb(40, 116, 182);
+    color: black;
+}
+tr{
+    color: rgb(230, 230, 210);
+}

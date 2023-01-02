@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Neel responsive </title>
+    <script src="../src/register.js"></script>
+    <link rel="stylesheet" href="../src/Register.css">
+    <link rel="stylesheet" href="../src/responsive.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="reg">
+    <nav class="navbar navbar-expand-lg">
+        <img src="../public/image/logo1.png" height="50px" alt="image not supported ">
+        <button style="background-color: white;color: white;" class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item "><a class="nav-link" href="Home.html">HOME</a></li>
+                <li class="nav-item "><a class="nav-link" href="">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="">OTHERS</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-sign-in"></span>SIGN-IN</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="login.html"><span class="fa fa-sign-in"></span> SIGN-IN </a>
+                        <a href="password.html"><span class="fa fa-unlock-alt"></span> Change Password </a>
+                    </div>
+                </li>
+
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group " id="search-bar">
+                    <input class="form-control mr-sm-2" type="search" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary "><span class="bi bi-search" type="submit"></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <section>
+
+        <div id="register">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 form-group"></div>
+                <div class="col-xs-12 col-sm-4 form-group" id="reglogin">
+                    <h3 class="text-center mt-3"><strong>Registration Form</strong></h3>
+                    <p id="error" style="color:red"></p>
+                    <br><br>
+                    <div class="log">
+                        <form method="" action="/regester" enctype="multipart/form-data">
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Full Name :</label>
+                                    <span id="message1">* </span>
+                                    <span id="nwrongalert" style="color:red"></span>
+                                    <input type="text" class="form-control" id="fullname" placeholder="Full Name"
+                                        name="fullname" onsubmit="return validatefor()" maxlength="30"
+                                        oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '').replace(/(\..*)\./g, '$1');"
+                                        title="Please enter characters only." required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Email :</label>
+                                    <span id="message1">* </span>
+                                    <input type="email" class="form-control" id="emailid" placeholder="Email Id"
+                                        name="emailid">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Mobile :</label>
+                                    <span id="message1">* </span>
+                                    <input type="text" class="form-control" id="phone" placeholder="Contact Number"
+                                        name="phone" required pattern="[7-9]{1}[0-9]{9}" maxlength="10"
+                                        title="The contact number must enter 10 digits number and number start with 7 or 8 or 9."
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Date Of Birth :</label>
+                                    <span id="message1">* </span>
+                                    <input type="date" class="form-control" data-date-format="" id="dob"
+                                        placeholder="Date" name="dob" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Image :</label>
+                                    <span id="message1">* </span>
+                                    <input type="file" name="file" placeholder="Image" accept=".png, .jpg, .jpeg"
+                                        onchange="readURL(this);" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Password :</label>
+                                    <span id="message1">* </span>
+                                    <input type="password" class="form-control" id="password" placeholder="Password"
+                                        name="password">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Confirm Password :</label>
+                                    <span id="message1">* </span>
+                                    <input type="password" class="form-control" id="confirmpassword"
+                                        placeholder="Confirm Password" name="confirmpassword"
+                                        onkeyup="validate_password()">
+
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 form-group">
+                                    <label>Gender Select :</label>
+                                    <span id="message1">* </span>
+                                    <input type="radio" id="gender" name="gender" value="male" required> Male
+                                    <input type="radio" id="gender" name="gender" value="female" required> Female
+                                </div>
+                            </div>
+
+                            <div class="row btngrp">
+                                <div class="col-xs-12 col-sm-6">
+                                    <span id="wrongalert"></span>
+                                    <button type="submit" class="btn btn-success btn-md pull-right" id="submitbtn"
+                                        onclick="wrongalert()"><span>Register</span></button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    %>
+    <footer>
+        <div class="footer">
+            <div>
+                <span class="fhead-color">DEVLOPER INFO</span>
+                <p> The Department of Defense Developers Page connects government and citizen developers with the tools
+                    they need to access DOD data. Software developers and researchers c</p>
+
+            </div>
+            <div>
+                <span class="fhead-color">Help</span>
+                <li class="list-style"><a class="footer-anchor" href="">Payments</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Shipping</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Cancellation Returns</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">FAQ</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Report Infringement</a></li>
+            </div>
+            <div>
+                <span class="fhead-color">POLICY</span>
+                <li class="list-style"><a class="footer-anchor" href=""> Return Policy</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Terms Of Use</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Sitemap</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">Security</a></li>
+                <li class="list-style"><a class="footer-anchor" href="">EPR Compliance</a></li>
+            </div>
+            <div>
+                <span class="fhead-color">SOCIAL MEDIA</span>
+                <li class="social-icon">
+                    <p>FALLOW OUR SOCIAL MEDIA LINK </p>
+                    <a href="#"><span class="fa fa-facebook-f fa-2x" style="color: #3b5998;"><span></a>
+                    <a href="#"><span class="fa fa-twitter fa-2x" style="color: #55acee;"></span></a>
+                    <a href="#"><span class="fa fa-google fa-2x" style="color: #dd4b39;"></span></a>
+                    <a href="#"><span class="fa fa-linkedin-in fa-2x" style="color: #0082ca;"></span></a>
+                    <a href="#"><span class="fa fa-youtube fa-2x" style="color: #c61118;"></span></a>
+                    <a href=""><span class="fa fa-linkedin-in fa-2x" style="color: #0082ca;"></span></a>
+                    <a href="#"><span class="fa fa-github fa-2x" style="color: #ffff;"></span></a>
+                    <a href="#"><span class="fa fa-instagram fa-2x" style="color: #ac2bac;"></span></a>
+
+                </li>
+            </div>
+        </div>
+        <div class="copy-right"><a href="">&copy NeelShop All Copright reserved</a></div>
+    </footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

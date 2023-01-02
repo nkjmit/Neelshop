@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: #ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+.img-left{
+    float: left;
+}
+p, h1{
+    text-align: center;
+}
+.text{
+    margin-top: 50px;
+}

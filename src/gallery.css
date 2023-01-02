@@ -1,0 +1,24 @@
+#im{
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr; */
+}
+h3{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: content '\e82d';
+ text-shadow: 2p blue;
+ margin-left: 30px;
+ margin-top: 2px;
+}
+#account-img img{
+    border-radius: 5%;
+}
+#account-img{
+    background-color:burlywood;
+    color: black;
+}
+.image-gallery p{
+    margin: 30px;;
+}

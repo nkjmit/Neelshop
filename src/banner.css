@@ -1,0 +1,57 @@
+#nav-menu{
+    width: 270px;
+}
+p{
+    padding: 20px;
+    border: 2px solid transparent;
+}
+nav{
+    position: sticky;
+    top: 0px;
+}
+.div1{
+    border: 1px solid black;
+}
+.red-box{
+    color: white;
+    background: red;
+    width: 150px;
+    height: 400px;
+    position: absolute;
+    z-index: 0;
+}
+.green-box{
+    background: green;
+    color: white;
+    width: 350px;
+    height: 360px;
+    position: absolute;
+    margin-left: 120px;
+    z-index: 1;
+}
+.pink-box{
+    background: pink;
+    color: wheat;
+    width: 370px;
+    height: 360px;
+    position: absolute;
+    margin-top: 340px;
+    z-index: 2;
+}
+.black-box{
+    background: black;
+    color: #ffff;
+    width: 400px;
+    height: 360px;
+    position: absolute;
+    z-index: 3;
+}
+.blue-box{
+    background: blue;
+    color: #ffff;
+    width: 400px;
+    height: 360px;
+    position: absolute;
+    margin-left: 200px;
+    z-index: 4;
+}
